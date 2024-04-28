@@ -1,0 +1,68 @@
+/* Basic reset to remove padding, margin, and default browser settings */
+body, h1, div, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Uses Arial font for the text */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light gray background color */
+}
+
+#container {
+    max-width: 600px; /* Maximum width of the container */
+    background-color: white; /* White background for the container */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow around the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    align-items: center;
+}
+
+h1 {
+    text-align: center; /* Centers the heading text */
+    color: #333; /* Dark gray color for the text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#grid {
+    width: 500px;
+    height: 500px;
+    display: grid; /* Uses CSS grid to layout squares */
+    gap: 2px; /* Space between squares */
+    border: 2px solid #ccc; /* Border around the grid */
+    margin-bottom: 20px; /* Space below the grid */
+}
+
+.square {
+    background-color: #eee; /* Light gray background for squares */
+}
+
+#controls {
+    text-align: center; /* Centers the buttons */
+}
+
+button {
+    background-color: #007BFF; /* Blue background color for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the buttons */
+    margin-right: 10px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* Removes the outline */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for interactions */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Shadow effect on hover */
+}
+
+button:active {
+    background-color: #004085; /* Even darker blue when button is clicked */
+}
